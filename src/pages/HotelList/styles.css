@@ -1,0 +1,89 @@
+.ant-card-body{
+    display: block;
+}
+.optiondetail{
+    display: flex;
+}
+.imgAll{
+    width: 260px;
+    height: 220px;
+    object-fit: cover;
+}
+.option{
+    position: relative;
+    display: block;
+    padding-left: 16px;
+    width: calc(100% - 260px);
+}
+.where-togo-area{
+    margin-top: 40px;
+}
+.price1{
+    color: rgb(0, 193, 222);
+    font-size: 30px;
+    font-weight: bold;
+}
+.pricerenhat{
+    color: red;
+    font-size: 14px;
+}
+
+.ant-list-bordered{
+    margin-top: 16px;
+}
+.anticon-thunderbolt{
+    color: blue;
+}
+.ant-card-head{
+    background-color: rgb(0, 193, 222,0.5);
+}
+.ant-col-18{
+    padding-left: 221px;
+}
+.form_area{
+    padding-left: 221px;
+}
+.hotel{
+    border: none;
+    margin-top: 27px;
+    margin-left: 19px;
+    font-weight: 700;
+}
+.hotro{
+    margin-left: 19px;
+    color: red;
+}
+
+.note{
+    background-color: rgba(214, 244, 250, 0.7);
+    border: none;
+    margin-left: 5px;
+    padding: 10px;
+  
+}
+.name{
+    width: 100%;
+    color: #003c71;
+}
+.tongHotelList{
+    margin-top: 16px;
+}
+.comment12{
+    margin-top: 3px;
+}
+
+.priceandnote{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.allList{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+    background-color: rgb(236, 240, 245);
+}

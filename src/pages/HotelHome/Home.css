@@ -1,0 +1,36 @@
+.noteHome{
+    position: relative;
+}
+.thongtin{
+    position: absolute;
+    top: 107px;
+    left: 31px;
+    font-size: 45px;
+    color: white;
+    width: 500px;
+    z-index: 9;
+}
+.item{
+  width: 424px;
+    height: 190px;
+    cursor: pointer;
+    
+}
+.homepage{
+    margin-top: 65px;
+}
+.slidercenter{
+    margin-bottom: 20px;
+}
+.headerdanhgia{
+    margin-left: 266px;
+}
+.localHeadLine {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #003c71;
+    padding: 8px 0px;
+    color: #003c71;
+    font-size: 32px;
+    font-weight: 400;
+  }

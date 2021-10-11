@@ -1,0 +1,38 @@
+.headers{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+.header-con{
+    display: flex;
+}
+.menu1{
+    padding-left: 30px;
+    list-style: none;
+}
+.menu-cha{
+    display: flex;
+}
+ .minh{
+    margin-top: 15px
+}
+.ant-col-4{
+    padding-left: 125px;
+}
+p{
+    display: none;
+}
+.logout{
+    margin-bottom: 35px;
+}
+.ant-col-13{
+    margin-left: -303px;
+}
+.menu2{
+    font-size: 25px;
+    color: white;
+}
+.centerheader{
+    margin-left: -150px;
+}

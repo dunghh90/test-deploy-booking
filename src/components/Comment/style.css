@@ -1,0 +1,41 @@
+
+/* .ant-form-horizontal{
+    margin-top: 60px;
+    margin-right: 510px;
+}
+.rate{
+    margin-left: 333px;
+} */
+/* .ant-form-item{
+    height: 70px;
+} */
+
+.horizontalLine {
+    border-bottom: 1px solid #ddd;
+    margin: 8px 0;
+}
+.txtArea{
+    width: 636px;
+    height: 128px
+   
+}
+.ALL{
+    margin-left: 258px;
+    width: 1004px;
+}
+.btn{
+    margin-left: 600px;
+}
+.item{
+    color: steelblue;
+}
+.row{
+    height: 100px;
+}
+.icon{
+    color: green;
+}
+.user{
+    color: red;
+    margin-right: 3px;
+}

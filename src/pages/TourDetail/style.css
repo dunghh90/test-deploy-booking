@@ -1,0 +1,176 @@
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+  }
+
+  h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    }
+
+    p {
+      display: block !important;
+      margin: 0 0 10px;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      }
+
+
+.content-header{
+  padding: 10px 0px;
+}
+
+.breadcrumb {
+  display: flex;
+  list-style: none;
+}
+
+p {
+  display: inline;
+}
+
+
+.order-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  /* width: 450px; */
+  min-width: 400px;
+  border-radius: 4px;
+  /* margin-left: 10px; */
+  background-color: #feeec5;
+  color:black;
+  
+}
+
+.ant-col {
+  padding: 0;
+}
+
+.horizontalLine {
+  border-bottom: 1px solid #ddd;
+  margin: 8px 0;
+}
+
+.loadMore {
+  text-decoration: none;
+  color: #00474f;
+}
+
+.ant-form {
+  width: auto;
+}
+
+.moveLocation{
+  /* color:#4e4e4e; */
+  min-width: 400px;
+  /* border-radius: 4px; */
+  cursor: pointer;
+}
+.moveLocation:hover{
+  background-color: rgba(37, 176, 211, 0.65);
+}
+.tourDetailheadLine {
+  padding: 10px 0;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.vcolor-primary {
+  color: #003c71;
+}
+
+/* .tourDetailContainer .tourDetailMainDiv .tourSchedule h3:first-child {
+} */
+
+.tourDetailContainer .tourDetailMainDiv .tourScheduleContainer {
+  margin-top: 0;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.tourDetailContainer .tourDetailMainDiv .tourSchedule p {
+  text-align: inherit;
+}
+
+.tourDetailContainer .tourDetailMainDiv .tourSchedule h3 {
+  font-size: 18px;
+  color: #4e4e4e;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.tourDetailContainer .tourDetailMainDiv p {
+  line-height: 1.45;
+  font-size: 16px;
+}
+body, table.body, h1, h2, h3, h4, h5, h6, p, td, th, a {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+.tourDetailContainer .tourDetailMainDiv .tourSchedule h3 {
+  font-size: 18px;
+  color: #4e4e4e;
+  text-transform: uppercase;
+  font-weight: bold;
+    line-height: 1.5;
+}
+.listPath {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  /* color:beige; */
+}
+
+.itemPath {
+  color: #4e4e4e;
+  /* padding: 0px 15px 0px 0px;
+  margin-left: -5px; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* .ant-card-head{
+  background-color:#feeec5;
+} */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  /* font-size: 14px; */
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  /* padding: 15px; */
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}

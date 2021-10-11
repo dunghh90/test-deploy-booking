@@ -1,0 +1,23 @@
+#components-layout-demo-responsive .logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(63, 124, 139, 0.2);
+}
+
+.site-layout-sub-header-background {
+  background: #fff;
+}
+
+.site-layout-background {
+  background: #fff;
+}
+.list {
+  cursor: pointer;
+}
+.list:hover {
+  background-color: #e2f7fb;
+}
+.list.active {
+  background-color: #003c71;
+  color: white;
+}

@@ -1,0 +1,352 @@
+
+.bodyHotelDetail{
+    background-color: #ecf0f5;
+}
+.bodyHotelDetail2{
+    max-width: 1400px;
+    width: 100%;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+.ALLROOM{
+    display: flex;  
+}
+.comment{
+    border: none;
+    margin-top: 27px;
+    font-weight: 500;
+   
+} 
+.img1{
+    width: 144%;
+    height: 100%;
+}
+.imgCol9detail{
+    margin-left: 180px;
+}
+h2{
+    
+    width: 156px;
+
+}
+.optiondetail2{
+    display: block;
+}
+.price{
+    color: rgb(0, 193, 222);
+    font-size: 30px;
+    font-weight: bold;
+   margin-bottom: -27px;
+   margin-right: 10px;
+   
+}
+.book{
+    margin-left: 204px;
+}
+.img2{
+    width: 366px;
+    height: 100%;
+}
+.img3{
+    width: 91%;
+    margin-top: 9px;
+    height: 93%;
+}
+.img4{
+    width: 100%;
+    margin-left: -161px;
+}
+.layout{
+    background-color: rgba(244, 250, 250, 0.9);
+    width: 91%;
+    margin-top: 10px;
+}
+.layout2{
+    width: 92%;
+   background-color: rgba(244, 250, 250, 0.9);;
+   margin-left: -52px;
+   margin-top: 10px;
+    display: flex;
+    border-radius: 10px;
+}
+.layout4{
+    width: 92%;
+   background-color: rgba(244, 250, 250, 0.9);;
+   margin-left: -44px;
+   margin-top: 10px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.content-header{
+    height: 48px;
+    margin-top: 10px;
+}
+.iconTime{
+    font-size: 64px;
+    padding-left: 23px;
+    padding: 5px;
+}
+.HotelDetailName{
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 5px;
+    color: #003a8c;
+}
+.combo{
+    background-color: rgba(132, 240, 60, 0.7);
+    margin-top: 10px;
+}
+.combo2{
+    background-color: rgba(132, 240, 60, 0.7);
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.all{
+    margin-left: 23px;
+}
+.wifi{
+    font-size: 30px;
+    position: absolute;
+    
+    bottom: 363px;
+    left: 148px;
+    color: greenyellow;
+}
+.bando{
+    font-size: 30px;
+    margin-left: 10px;
+    color: greenyellow;
+
+}
+.Abc{
+    color: rgba(67, 0, 222, 0.7);
+}
+.bcd{
+    color: red;
+}
+.detail{
+    margin-left: -96px;
+    margin-top: 5px;
+}
+.cartall{
+    display: block;
+}
+.imgcart{
+    width: 322px;
+    margin-left: -2px;
+    /* border-radius: 14px; */
+}
+.doxe{
+    display: flex;
+    justify-content: space-between;
+    border: solid 0.5px;
+    border-left: none;
+    border-right: none;
+    padding: 5px;
+
+}
+.itemdoxe{
+    padding-top: 2px;
+}
+.free{
+    color: green;
+}
+.icondoxe{
+    color: blue;
+}
+.Note{
+    font-weight: 700;
+    padding-top: 10px;
+}
+.itemnote{
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+.itemnote1{
+    margin-top: 3px;
+    color: green;
+}
+.allthongtin{
+    display: flex;
+}
+.layout3{
+    background-color: rgba(244, 250, 250, 0.9);
+    width: 91%;
+    margin-top: 10px;
+    height: 299px;
+    display: block;
+    padding-left: 23px;
+}
+.diemnoibat{
+    margin: 0;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+}
+.icondiemnoibat{
+    font-size: 30px;
+    color: blue;
+}
+.icondiemnoibat1{
+    color: crimson;
+    font-size: 30px;
+}
+.icondiemnoibat2{
+   color: red;
+    font-size: 30px;
+}
+.centernote{
+    border-left: solid 0.5px rgba(186, 196, 196, 0.9);
+    border-right: solid 0.5px rgba(186, 196, 196, 0.9);
+    padding: 18px;
+    display: flex;
+    padding-left: 7px;
+   
+
+}
+.diemnobatcon1{
+    display: flex;
+    padding: 18px;
+    padding-left: 7px;
+}
+.diemnobatcon2{
+    display: flex;
+    padding: 18px;
+    padding-left: 7px;
+}
+.Note12{
+    padding-left: 7px;
+
+}
+.note13{
+    font-weight: 700;
+}
+.note14{
+    color: green;
+}
+.ant-layout-content{
+    margin-top: 10px;
+}
+.timkiem{
+    background-color: rgba(9, 4, 37, 0.9);
+    display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 64px;
+  width: 100%;
+  z-index: 999;
+
+}
+
+
+.detailTrangchu{
+    margin-top: 134px;
+}
+.backtop{
+    margin-right: -81px;
+}
+.imghoteldetail{
+    height: 312px;
+}
+.danhgiashow{
+    display: block;
+}
+.score {
+    padding: 3px 10px;
+    margin-right: 5px;
+    border-radius: 6px;
+    background: #9fc43a;
+    color: #fff;
+    font-weight: bold;
+  }
+  .score-description {
+    color: #9fc43a;
+    font-weight: bold;
+  }
+  .score-danhgia{
+    font-weight: bold;
+    color: rgba(119, 13, 13, 0.9);
+  }
+  .alldanhgia{
+      display: flex;
+      justify-content: space-between;
+  }
+  .danhgiacenter{
+      margin-left: 20px;
+  }
+  .progress{
+      color: green;
+  }
+  .thongtinluuy{
+      display: block;
+      margin-left: 20px;
+  }
+  h4{
+      padding: 10px;
+      display: flex;
+  }
+  .thongtinluuy1{
+      margin-top: -16px;
+  }
+/* .ant-tabs-nav-list{
+    margin-left: -671px;
+} */
+.rowdanhgiaall{
+    margin-left: 150px;
+}
+.comment1{
+    margin-left: 60px;
+    border: none;
+    margin-top: 27px;
+    font-weight: 500;
+}
+.notethongbao{
+    display: flex;
+}
+.notethongbaocon{
+    padding-top: 6px;
+    color: red;
+}
+/* .ant-tabs-nav{
+    width: 957px;
+} */
+.iconTime2{
+    font-size: 80px;
+    padding-left: 23px;
+    padding: 5px;
+    color: rgba(33, 5, 112, 0.7);
+}
+.coldanhgia{
+    
+    margin-left: -89px;
+}   
+.coldanhgia2{
+    margin-left: 62px;
+}
+.detailCol18{
+    padding-left: 30px;
+}
+.thongtinhuich{
+    font-size: 15px;
+    font-weight: 500;
+  
+}
+.thongtinhuich2{
+    font-size: 15px;
+    font-weight: 700;
+   
+}
+
+.sdt{
+    color: red;
+}
+.khongcokq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    color: rgba(185, 23, 23, 0.7)
+}
