@@ -18,7 +18,7 @@ function* getLocationListSaga(action) {
     yield put({
       type: "GET_LOCATION_LIST_SUCCESS",
       payload: {
-        data: result.data,
+        data: result.data.data,
         more,
         page
       },
@@ -52,7 +52,7 @@ function* getListHotelSaga(action) {
     yield put({
       type: "GET_LIST_HOTEL_SUCCESS",
       payload: {
-        data: result.data,
+        data: result.data.data,
         more,
         page
       },

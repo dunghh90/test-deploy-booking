@@ -311,7 +311,7 @@ function ProfilePage({
         key: "date",
       },
     ];
-    const tableData = bookingTours.data?.map((item) => {
+    const tableData = bookingTours.data.data.map((item) => {
       return {
         ...item,
         tourName: item.tour.name,

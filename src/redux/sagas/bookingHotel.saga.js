@@ -29,7 +29,7 @@ function* bookingHotelRoom(action) {
     yield put({
       type: "BOOKING_HOTEL_ROOM_SUCCESS",
       payload: {
-        data: result.data,
+        data: result.data.data,
       },
     });
   } catch (e) {

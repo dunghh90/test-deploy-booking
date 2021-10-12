@@ -29,7 +29,7 @@ function* bookingTour(action) {
     })
     yield put({
       type: "BOOKING_TOUR_SUCCESS",
-      data: result.data,
+      data: result.data.data,
       payload: {
       },
     });

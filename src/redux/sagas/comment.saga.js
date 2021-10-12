@@ -38,7 +38,7 @@ function* getListCommentSaga(action) {
     yield put({
       type: "GET_LIST_COMMENT_SUCCESS",
       payload: {
-        data: result.data,
+        data: result.data.data,
       },
     });
   } catch (e) {
@@ -46,7 +46,6 @@ function* getListCommentSaga(action) {
   }
 }
 function* addCommentSaga(action) {
-console.log("🚀 ~ file: comment.saga.js ~ line 49 ~ function*addCommentSaga ~ action", action)
   
   try {
     const { userId, userName,tourId, hotelId, comment, rate } = action.payload;
@@ -67,7 +66,7 @@ console.log("🚀 ~ file: comment.saga.js ~ line 49 ~ function*addCommentSaga ~ 
     yield put({
       type: "ADD_COMMENT_SUCCESS",
       payload: {
-        data: result.data,
+        data: result.data.data,
       },
     });
     // window.location.reload();

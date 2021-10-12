@@ -7,7 +7,6 @@ import moment from 'moment';
 function* loginSaga(action) {
   try {
     const { email, password, prevPath } = action.payload;
-    console.log("🚀 ~ file: user.saga.js ~ line 9 ~ function*loginSaga ~ email", email)
     const result = yield axios({
       method: 'GET',
       // url: 'http://localhost:3002/users',
@@ -17,7 +16,6 @@ function* loginSaga(action) {
         password,
       }
     });
-    console.log("🚀 ~ file: user.saga.js ~ line 27 ~ function*loginSaga ~ result", result)
     if (result.data.length > 0) {
       localStorage.setItem('userInfo', JSON.stringify(result.data[0]));
       yield put({
@@ -123,7 +121,7 @@ function* updateProfileSaga(action) {
       // const result = yield axios.get(`http://localhost:3002/users?id=${id}&password=${password}`);
       const result = yield axios.get(`https://json-server-demo-tour.herokuapp.com/api/users?id=${id}&password=${password}`);
       
-      if (result.data.length == 0) { 
+      if (result.data.length === 0) { 
         yield put({
           type: "UPDATE_PROFILE_FAIL",
           payload: {

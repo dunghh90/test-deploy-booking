@@ -198,7 +198,6 @@ function LoginPage(props) {
                       ({ getFieldValue }) => ({
                         validator(_, valuesField) {
                           // debugger
-                          // console.log("tessstt " + vnf_reg.test(valuesField))
                           if (!valuesField || vnf_reg.test(parseInt(valuesField)) == true) {
                             return Promise.resolve();
                           } else {

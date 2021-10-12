@@ -5,7 +5,6 @@ export function getCommentAction(params) {
   }
 }
 export function addCommentAction(params) {
-  console.log("🚀 ~ file: comment.action.js ~ line 8 ~ addCommentAction ~ params", params)
   return {
     type: 'ADD_COMMENT_REQUEST',
     payload: params,

@@ -161,24 +161,24 @@ function ListRoomPage({ listRoom, getListRoom, match, bookingHotelRoom, userInfo
         listRoom.data.bookingHotels.forEach((bookingItem, bookingIndex) => {
           if (
             ((moment(dateSelected[0], "YYYY/MM/DD").unix() -
-              moment(bookingItem.startDate, "YYYY/MM/DD").unix() >=
+              moment(bookingItem?.startDate, "YYYY/MM/DD").unix() >=
               0 &&
-              moment(bookingItem.endDate, "YYYY/MM/DD").unix() -
+              moment(bookingItem?.endDate, "YYYY/MM/DD").unix() -
                 moment(dateSelected[1], "YYYY/MM/DD").unix() >=
                 0) ||
               (moment(dateSelected[1], "YYYY/MM/DD").unix() -
-                moment(bookingItem.startDate, "YYYY/MM/DD").unix() >
+                moment(bookingItem?.startDate, "YYYY/MM/DD").unix() >
                 0 &&
-                moment(bookingItem.startDate, "YYYY/MM/DD").unix() -
+                moment(bookingItem?.startDate, "YYYY/MM/DD").unix() -
                   moment(dateSelected[0], "YYYY/MM/DD").unix() >
                   0) ||
-              (moment(bookingItem.endDate, "YYYY/MM/DD").unix() -
+              (moment(bookingItem?.endDate, "YYYY/MM/DD").unix() -
                 moment(dateSelected[0], "YYYY/MM/DD").unix() >
                 0 &&
                 moment(dateSelected[1], "YYYY/MM/DD").unix() -
-                  moment(bookingItem.endDate, "YYYY/MM/DD").unix() >
+                  moment(bookingItem?.endDate, "YYYY/MM/DD").unix() >
                   0)) &&
-            bookingItem.roomId === item.id
+            bookingItem?.roomId === item.id
           ) {
             isDisabled = true;
           }

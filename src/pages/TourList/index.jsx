@@ -22,7 +22,6 @@ function TourListPage({
 
   const topicTourId = location.topicTourId? location.topicTourId : '';
   const [topicSelected, setTopicSelected] = useState(topicTourId);
-  console.log("🚀 ~ file: index.jsx ~ line 25 ~ location", location)
   
   const [locationSelected, setLocationSelected] = useState(null);
   

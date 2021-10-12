@@ -33,10 +33,6 @@ function CommentPage(props) {
   }, []);
 
   function handleAddComment(values) {
-    console.log(
-      "🚀 ~ file: index.jsx ~ line 33 ~ handleAddComment ~ values",
-      values
-    );
     if (!userInfo.data.id) {
       alert("Bạn cần đăng nhập!");
     } else {

@@ -54,7 +54,7 @@ function BrowserRouter(props) {
         <DefaultLayout
           exact
           path={ROUTERS.HOTEL_HOME}
-          component={TourHomePage}
+          component={HomePage}
           productList={productList}
         />
         <DefaultLayout

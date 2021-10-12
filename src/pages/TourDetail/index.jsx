@@ -46,7 +46,6 @@ function TourDetailPage({
   userInfo,
   match,
 }) {
-  console.log('🚀 ~ file: index.jsx ~ line 49 ~ tourDetail', tourDetail);
   const [orderTourForm] = Form.useForm();
   const { TextArea } = Input;
   const tourId = match.params.id;
@@ -79,7 +78,6 @@ function TourDetailPage({
   }, [tourDetail.data]);
   // useEffect(() => {
   //   getTourDetail({ id: tourId });
-  //   console.log("🚀 ~ file: index.jsx ~ line 50 ~ test")
   //   debugger
   // }, [customerRemain])
   const filterTourListByTopic = tourList.data.filter((item) => {

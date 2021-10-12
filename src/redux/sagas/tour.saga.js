@@ -24,7 +24,7 @@ function* getTourListSaga(action) {
     yield put({
       type: "GET_TOUR_LIST_SUCCESS",
       payload: {
-        data: result.data
+        data: result.data.data
       },
     });
   } catch (e) {

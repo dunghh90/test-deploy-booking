@@ -111,7 +111,6 @@ function BookingTourPage(props) {
       okText: 'Xác nhận',
       cancelText: 'Huỷ',
       onOk() {
-        console.log('OK');
         bookingTour({
           userId: userInfo.data.id,
           tourId: parseInt(tourId),
@@ -123,7 +122,6 @@ function BookingTourPage(props) {
         setCustomerRemain(cusRemain);
       },
       onCancel() {
-        console.log('Cancel');
       },
     });
   }

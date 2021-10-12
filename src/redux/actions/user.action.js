@@ -1,5 +1,4 @@
 export function loginAction(params) {
-  console.log("🚀 ~ file: user.action.js ~ line 2 ~ loginAction ~ params", params)
   return {
     type: 'LOGIN_REQUEST',
     payload: params,
