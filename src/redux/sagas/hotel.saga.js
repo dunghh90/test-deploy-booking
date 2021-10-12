@@ -6,7 +6,8 @@ function* getLocationListSaga(action) {
     const { page,limit,more } = action.payload;
     const result = yield axios({
       method: 'GET',
-      url: 'http://localhost:3002/locations',
+      // url: 'http://localhost:3002/locations',
+      url: 'https://json-server-demo-tour.herokuapp.com/api/locations',
       params:{
         _page: page,
         _limit: limit,
@@ -38,7 +39,7 @@ function* getListHotelSaga(action) {
     const { id,more,page,limit,rate,address } = action.payload;
     const result = yield axios({
       method: 'GET',
-      url: 'http://localhost:3002/hotels',
+      url: 'https://json-server-demo-tour.herokuapp.com/api/hotels',
       params: {
         _page: page,
         _limit: limit,
@@ -70,7 +71,7 @@ function* getListRoomSaga(action) {
     const { id } = action.payload;
     const result = yield axios({
       method: 'GET',
-      url: `http://localhost:3002/hotels/${id}?_embed=rooms&_embed=bookingHotels&_expand=location`,
+      url: `https://json-server-demo-tour.herokuapp.com/api/hotels/${id}?_embed=rooms&_embed=bookingHotels&_expand=location`,
       
     });
     

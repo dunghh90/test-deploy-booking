@@ -10,7 +10,7 @@ function* getListCommentSaga(action) {
       (
         yield axios({
         method: 'GET',
-        url: 'http://localhost:3002/commentHotels',
+        url: 'https://json-server-demo-tour.herokuapp.com/api/commentHotels',
         params: {
           _expand:"user",
           _page: page,
@@ -23,7 +23,7 @@ function* getListCommentSaga(action) {
       ) : (
       yield axios({
         method: 'GET',
-        url: 'http://localhost:3002/commentTours',
+        url: 'https://json-server-demo-tour.herokuapp.com/api/commentTours',
         params: {
           _expand:"user",
           _page: page,
@@ -54,13 +54,13 @@ console.log("🚀 ~ file: comment.saga.js ~ line 49 ~ function*addCommentSaga ~ 
     const result = hotelId ? (
       yield axios({
         method: 'POST',
-        url: 'http://localhost:3002/commentHotels',
+        url: 'https://json-server-demo-tour.herokuapp.com/api/commentHotels',
         data: { userId, userName, hotelId, comment, rate, creatDate },
       })
       ) : (
       yield axios({
         method: 'POST',
-        url: 'http://localhost:3002/commentTours',
+        url: 'https://json-server-demo-tour.herokuapp.com/api/commentTours',
         data: { userName, userId, tourId, comment, rate, creatDate }
       })
     )

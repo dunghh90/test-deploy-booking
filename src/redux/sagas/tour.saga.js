@@ -6,7 +6,8 @@ function* getTourListSaga(action) {
     const { page, limit, locationId, topicTourId } = action.payload;
     const result = yield axios({
       method: 'GET',
-      url: `http://localhost:3002/tours?_page=${page}&_limit=${limit}&_expand=location&_expand=topicTour`,
+      // url: `http://localhost:3002/tours?_page=${page}&_limit=${limit}&_expand=location&_expand=topicTour`,
+      url: `https://json-server-demo-tour.herokuapp.com/api/tours?_page=${page}&_limit=${limit}&_expand=location&_expand=topicTour`,
       params: {
         // _page: page,
         // _limit: limit,
@@ -39,7 +40,7 @@ function* getTopicTourListSaga(action) {
   try {
     const result = yield axios({
       method: 'GET',
-      url: 'http://localhost:3002/topicTours',
+      url: 'https://json-server-demo-tour.herokuapp.com/api/topicTours',
     });
     yield put({
       type: "GET_TOPIC_TOUR_LIST_SUCCESS",
@@ -62,7 +63,8 @@ function* getTourDetailSaga(action) {
     const { id } = action.payload;
     const result = yield axios({
       method: 'GET',
-      url: `http://localhost:3002/tours/${id}`,
+      // url: `http://localhost:3002/tours/${id}`,
+      url: `https://json-server-demo-tour.herokuapp.com/api/tours/${id}`,
       params: {
         _expand: 'location',
         _embed: 'bookingTours'

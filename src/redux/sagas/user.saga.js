@@ -10,7 +10,8 @@ function* loginSaga(action) {
     console.log("🚀 ~ file: user.saga.js ~ line 9 ~ function*loginSaga ~ email", email)
     const result = yield axios({
       method: 'GET',
-      url: 'http://localhost:3002/users',
+      // url: 'http://localhost:3002/users',
+      url: 'https://json-server-demo-tour.herokuapp.com/api/users',
       params: {
         email,
         password,
@@ -54,7 +55,8 @@ function* registerSaga(action) {
     const { email, password, name,birthday,gender,phone } = action.payload;
     const emailCheckResult = yield axios({
       method: 'GET',
-      url: 'http://localhost:3002/users',
+      // url: 'http://localhost:3002/users',
+      url: 'https://json-server-demo-tour.herokuapp.com/api/users',
       params: {
         email,
       }
@@ -66,7 +68,8 @@ function* registerSaga(action) {
     } else {
       const result = yield axios({
         method: 'POST',
-        url: 'http://localhost:3002/users',
+        // url: 'http://localhost:3002/users',
+        url: 'https://json-server-demo-tour.herokuapp.com/api/users',
         data: { email, password, name, birthday: moment(birthday).format("DD/MM/YYYY"), gender, phone }
       });
       yield put({
@@ -93,7 +96,8 @@ function* registerSaga(action) {
 function* getUserInfoSaga(action) {
   try {
     const { id } = action.payload;
-    const result = yield axios.get(`http://localhost:3002/users/${id}`);
+    // const result = yield axios.get(`http://localhost:3002/users/${id}`);
+    const result = yield axios.get(`https://json-server-demo-tour.herokuapp.com/api/users/${id}`);
     yield put({
       type: "GET_USER_INFO_SUCCESS",
       payload: {
@@ -116,7 +120,8 @@ function* updateProfileSaga(action) {
     
     if (passwordNew) {
       
-      const result = yield axios.get(`http://localhost:3002/users?id=${id}&password=${password}`);
+      // const result = yield axios.get(`http://localhost:3002/users?id=${id}&password=${password}`);
+      const result = yield axios.get(`https://json-server-demo-tour.herokuapp.com/api/users?id=${id}&password=${password}`);
       
       if (result.data.length == 0) { 
         yield put({
@@ -130,7 +135,8 @@ function* updateProfileSaga(action) {
       }  else {
         const result = yield axios({
           method: 'PATCH',
-          url: `http://localhost:3002/users/${id}`,
+          // url: `http://localhost:3002/users/${id}`,
+          url: `https://json-server-demo-tour.herokuapp.com/api/users/${id}`,
           data: { password: passwordNew },
         })   
 
@@ -155,7 +161,8 @@ function* updateProfileSaga(action) {
 
         const result = yield axios({
             method: 'PATCH',
-            url: `http://localhost:3002/users/${id}`,
+            // url: `http://localhost:3002/users/${id}`,
+            url: `https://json-server-demo-tour.herokuapp.com/api/users/${id}`,
             data: { email, name,birthday,gender,phone},
         });
 

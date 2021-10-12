@@ -7,7 +7,7 @@ function* bookingTour(action) {
     const { userId, tourId, startDate, numberAdults, numberChild, totalPrice } = action.payload;
     const result = yield axios({
       method: 'POST',
-      url: 'http://localhost:3002/bookingTours',
+      url: 'https://json-server-demo-tour.herokuapp.com/api/bookingTours',
       data: {
         userId,
         tourId,
@@ -48,7 +48,7 @@ function* getBookingTours(action) {
     const { userId, page, limit } = action.payload;
     const result = yield axios({
       method: 'GET',
-      url: 'http://localhost:3002/bookingTours',
+      url: 'https://json-server-demo-tour.herokuapp.com/api/bookingTours',
       params:{
         _page: page,
         _limit: limit,

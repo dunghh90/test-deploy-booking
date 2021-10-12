@@ -7,7 +7,8 @@ function* bookingHotelRoom(action) {
     const { userId, hotelId, roomId, startDate, endDate,page,limit,totalPrice } = action.payload;
     const result = yield axios({
       method: 'POST',
-      url: 'http://localhost:3002/bookingHotels',
+      // url: 'http://localhost:3002/bookingHotels',
+      url: 'https://json-server-demo-tour.herokuapp.com/api/bookingHotels',
       params:{
         _page: page,
         _limit: limit
@@ -45,7 +46,7 @@ function* getBookingHotels(action) {
     const { userId } = action.payload;
     const result = yield axios({
       method: 'GET',
-      url: `http://localhost:3002/bookingHotels?_expand=hotel&_expand=room`,
+      url: `https://json-server-demo-tour.herokuapp.com/api/bookingHotels?_expand=hotel&_expand=room`,
       params: {
         userId,
       }
